@@ -1,19 +1,32 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+class MyCard extends StatelessWidget {
+  const MyCard({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Dashboard"), actions: const []),
+      appBar: AppBar(title: const Text("Belajar card"), actions: const []),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(20.0),
-          child: const Column(children: []),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Card(
+                color: Color.fromARGB(255, 251, 255, 1),
+                elevation: 8,
+                child: ListTile(
+                  leading: Icon(Icons.account_circle, size: 50),
+                  title: Text("Latihan Card 1"),
+                  subtitle: Text("contoh latihan card pertama"),
+                ),
+              ),
+              
+            ]
+          ),
         ),
       ),
     );
-    ;
   }
 }
