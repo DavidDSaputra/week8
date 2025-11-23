@@ -20,13 +20,29 @@ class MyCard extends StatelessWidget {
                   leading: Icon(Icons.account_circle, size: 50),
                   title: Text("Latihan Card 1"),
                   subtitle: Text("contoh latihan card pertama"),
-                ),
+                ),  
               ),
-              
-            ]
+              Card(
+                elevation: 8,
+                shadowColor: Colors.blue,
+                clipBehavior: Clip.antiAlias,
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Colors.purple, Colors.pink],
+                      begin: Alignment.topRight,
+                      end: Alignment.bottomLeft,
+                    ),
+                  ),
+                  child: Text("text", style: TextStyle(fontSize: 20.0),),
+                ),
+              )
+            ],
           ),
         ),
       ),
     );
+
+    
   }
 }
