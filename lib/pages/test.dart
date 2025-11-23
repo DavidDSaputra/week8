@@ -40,9 +40,20 @@ class MyCard extends StatelessWidget {
               Card(
                 elevation: 5.0,
                   margin: EdgeInsets.all(16.0),
+                   color: const Color(0xFF184B88),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(24),
+                    ),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                         children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Icon(Icons.credit_card, color: Colors.white70, size: 32),
+                            Icon(Icons.contactless, color: Colors.white54, size: 32),
+                          ],
+                        ),
                         ListTile(
                           leading: Icon(Icons.install_desktop_rounded, size: 50),
                           title: Text('Belum ada judul'),
