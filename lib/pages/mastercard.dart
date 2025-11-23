@@ -9,9 +9,16 @@ class MastercardPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Mastercard"),
       ),
-      body: const Center(
-        child: Text("Halaman Mastercard"),
+     body: Center(
+      child: Card(
+        elevation: 5.0,
+        margin: const EdgeInsets.all(16.0),
+        child: Container(
+          width: 340,
+          height: 200,
+        ),
       ),
+    ),
     );
   }
 }
