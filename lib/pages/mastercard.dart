@@ -22,11 +22,16 @@ class MastercardPage extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  children: const [
-    Icon(Icons.credit_card, size: 32),
-    Icon(Icons.contactless, size: 32),
-  ],
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Icon(Icons.credit_card, size: 32),
+                Icon(Icons.contactless, size: 32),
+              ],
+            ),
+            const SizedBox(height: 24),
+const Text(
+  "4562 1122 4595 7852",
+  style: TextStyle(fontSize: 20),
 ),
             ],
         ),
