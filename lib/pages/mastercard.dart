@@ -16,6 +16,21 @@ class MastercardPage extends StatelessWidget {
         child: Container(
           width: 340,
           height: 200,
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+        child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  children: const [
+    Icon(Icons.credit_card, size: 32),
+    Icon(Icons.contactless, size: 32),
+  ],
+),
+            ],
+        ),
+        ),
         ),
       ),
     ),
